@@ -53,7 +53,7 @@ print("Utilitza f-strings per imprimir una presentació.")
 ### Completa aquí
 nom = "Daniel"
 edat = 21
-alt = 1,87
+alt = 1.87
 
 print(f"Hola! Em dic {nom}, tinc {edat} i alçada {alt}")
 
@@ -65,6 +65,14 @@ print("2. Arrodoneix el nombre amb round()")
 print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
+### Completa aquí
+pi = 3.14159
+print(pi)
+a = round(pi)
+print(a)
+div = int(pi / a)
+print("Divisió: ", div)
+
 print("--------------")
 
 print("\nExercici 6: Conversor de temperatura")
@@ -74,6 +82,11 @@ print("Mostra els dos valors amb un missatge clar.")
 
 ### Completa aquí
 
+print("Entra una temperatura en Celsius: ")
+temp = input()
+faren = (float(temp) * 9/5 + 32)
+print(f"La temperatura en Fahrenheit es de {faren}")
+
 print("--------------")
 
 print("\nExercici 7: Calculadora de propina")
@@ -82,6 +95,17 @@ print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
 
 ### Completa aquí
+print("Quina es la quantiat del compte?: ")
+compte = input()
+print("I la propina(en percentatge)?: ")
+b = input()
+c = float(compte)
+d = float(b)
+
+propina = (c * d)/100
+total = c + propina
+
+print(f"El compte surt per {round(total, 2)}")
 
 print("--------------")
 
@@ -91,3 +115,14 @@ print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 ### Completa aquí
+
+print("Introdueix la teva contrasenya: ")
+pas = input()
+
+if(len(pas) < 8):
+
+    print("Contrasenya no vàlida") 
+else:
+    
+    print("Contrasenya vàlida")
+
