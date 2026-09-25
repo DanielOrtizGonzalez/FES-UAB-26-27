@@ -105,7 +105,7 @@ d = float(b)
 propina = (c * d)/100
 total = c + propina
 
-print(f"El compte surt per {round(total, 2)}")
+print(f"El compte surt per {total:.2f}")
 
 print("--------------")
 
