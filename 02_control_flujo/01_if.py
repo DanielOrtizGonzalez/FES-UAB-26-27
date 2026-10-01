@@ -147,10 +147,23 @@ es_fin_de_semana = False
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
 
+num1 = input("Introdueix un nombre: ")
+num2 = input("Introdueix un altre nombre: ")
+
+if(num1 > num2):
+    print(F"El {num1} és mayor al {num2}")
+
+elif(num2 > num1):
+    print(F"El {num2} és mayor al {num1}")
+
+else:
+    print(F"Els números, {num1}, {num2}, són iguals")
 
 # Ejercicio 2: Calculadora simple
 # Pide al usuario dos números y una operación (+, -, *, /)
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
+
+
 
 # Ejercicio 3: Año bisiesto
 # Pide al usuario que introduzca un año y determina si es bisiesto.
