@@ -17,7 +17,12 @@ print(f"El nom del tècnic es, {nom} i el nom de la xarxa és, {xarxa}")
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
 # Suposa que 1 GB = 8 Gb i que la velocitat es manté constant.
 
+longitud = float(input("Longitud de l'enllaç en km: "))
+velocitat = float(input("Velocitat de transmissió en Gbps: "))
 
+temps = 8 / velocitat
+
+print(f"La longitud de l'enllaç és de {longitud} km i caldrien {temps} segons per transmetre 1 GB de dades.")
 
 # Exercici 3
 # Demana el nombre d'hores de feina i el preu per hora d'una instal·lació de xarxa.
