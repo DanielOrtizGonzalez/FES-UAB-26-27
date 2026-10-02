@@ -163,7 +163,27 @@ else:
 # Pide al usuario dos números y una operación (+, -, *, /)
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
 
+num1 = float(input("Introduce el primer número: "))
+num2 = float(input("Introduce el segundo número: "))
+operacion = input("Introduce la operación (+, -, *, /): ")
 
+if operacion == "+":
+    resultado = num1 + num2
+    print(f"El resultado es: {resultado}")
+elif operacion == "-":
+    resultado = num1 - num2
+    print(f"El resultado es: {resultado}")
+elif operacion == "*":
+    resultado = num1 * num2
+    print(f"El resultado es: {resultado}")
+elif operacion == "/":
+    if num2 == 0:
+        print("Error: No se puede dividir entre cero.")
+    else:
+        resultado = num1 / num2
+        print(f"El resultado es: {resultado}")
+else:
+    print("Operación no válida.")
 
 # Ejercicio 3: Año bisiesto
 # Pide al usuario que introduzca un año y determina si es bisiesto.
