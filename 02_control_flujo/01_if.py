@@ -189,6 +189,12 @@ else:
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
 
+año = int(input("Introduce un año: "))
+
+if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+    print(f"El año {año} es bisiesto.")
+else:
+    print(f"El año {año} no es bisiesto.")
 
 
 # Ejercicio 4: Categorizar edades
@@ -198,3 +204,18 @@ else:
 # - Adolescente (13-17 años)
 # - Adulto (18-64 años)
 # - Adulto mayor (65 años o más)
+
+edad = int(input("Introduce tu edad: "))
+
+if edad < 0:
+    print("Edad no válida.")
+elif edad <= 2:
+    print("Eres un bebé.")
+elif edad <= 12:
+    print("Eres un niño.")
+elif edad <= 17:
+    print("Eres un adolescente.")
+elif edad <= 64:
+    print("Eres un adulto.")
+else:
+    print("Eres un adulto mayor.")
