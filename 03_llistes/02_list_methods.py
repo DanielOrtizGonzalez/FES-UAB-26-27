@@ -111,7 +111,7 @@ eliminado = lista_a.pop(3)
 
 print(f"Posicion eliminada: {eliminado}")
 
-lista_b.clear()
+lista_b.clear() 
 
 print(f"Lista A: {lista_a}")
 print(f"Lista B: {lista_b}")

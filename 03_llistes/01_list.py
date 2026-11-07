@@ -38,11 +38,11 @@ print(lista2[-2]) # plátanos
 # print(lista_de_listas[1][0])
 
 # Slicing (rebanado) de listas
-lista1 = [1, 2, 3, 4, 5]
-# print(lista1[1:4]) # [2, 3, 4]
-# print(lista1[:3]) # [1, 2, 3]
-# print(lista1[3:]) # [4, 5]
-# print(lista1[:]) # [1, 2, 3, 4, 5] Copia de la lista
+lista1 = [1, 2, 3, 4, 5, 6, 7]
+print(lista1[1:4]) # [2, 3, 4]
+print(lista1[:3]) # [1, 2, 3]
+print(lista1[3:]) # [4, 5]
+print(lista1[:]) # [1, 2, 3, 4, 5] Copia de la lista
 
 
 # HAY MÁS MAGIA
